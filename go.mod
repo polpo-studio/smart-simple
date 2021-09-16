@@ -1,6 +1,6 @@
 module github.com/polpo-studio/smart-simple
 
-go 1.15
+go 1.17
 
 require (
 	github.com/Joker/hpp v1.0.0 // indirect

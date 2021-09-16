@@ -3,7 +3,7 @@ package simple
 import (
 	"github.com/kataras/iris/v12"
 
-	"github.com/mlogclub/simple/strcase"
+	"github.com/polpo-studio/smart-simple/strcase"
 )
 
 type QueryParams struct {
