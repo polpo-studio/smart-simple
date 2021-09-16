@@ -1,4 +1,4 @@
-module github.com/mlogclub/simple
+module github.com/polpo-studio/smart-simple
 
 go 1.15
 
