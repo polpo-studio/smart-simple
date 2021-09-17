@@ -11,13 +11,12 @@ var (
 )
 
 func OpenRedis(option *redis.Options) (err error) {
-	c := redis.NewClient(option)
+	client = redis.NewClient(option)
 	pong, err := client.Ping(context.Background()).Result()
-
 	if err != nil {
-		log.Info("redis connect ping response:", pong)
+		log.Error("redis connect ping failed, err:", err)
 	} else {
-		client = c
+		log.Info("redis connect ping response:", pong)
 	}
 	return
 }
